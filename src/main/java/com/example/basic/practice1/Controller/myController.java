@@ -23,6 +23,12 @@ public class myController {
 
     @PostMapping("/validate")
     public ResponseEntity<myDto> validate(@RequestBody myDto mydto){
+        System.out.println("this is my Controller class"
+
+
+
+
+        );
 
         if(myservice.bussinessValidate(mydto)){
             return new ResponseEntity<>(mydto, HttpStatus.CREATED);
