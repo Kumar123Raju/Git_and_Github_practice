@@ -13,6 +13,7 @@ public class myService {
     private myValidate myvalidate;
 
     public boolean bussinessValidate(myDto mydto){
+        System.out.println("THis is my bussiness validation logic");
         if(myvalidate.validate(mydto)) return true;
         else return false;
 

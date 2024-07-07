@@ -23,8 +23,7 @@ public class myController {
 
     @PostMapping("/validate")
     public ResponseEntity<myDto> validate(@RequestBody myDto mydto){
-//        Map<Integer, Boolean> result=new HashMap<>();
-        System.out.println("This is post mapping request having /validate");
+
         if(myservice.bussinessValidate(mydto)){
             return new ResponseEntity<>(mydto, HttpStatus.CREATED);
         }
